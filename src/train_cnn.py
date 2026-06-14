@@ -158,6 +158,12 @@ def train_cnn_model(train_dir, test_dir, epochs=30, batch_size=32):
     return test_accuracy
 
 if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description="CNN Transfer Learning Training Script")
+    parser.add_argument("--epochs", type=int, default=30, help="Number of epochs to train.")
+    parser.add_argument("--batch-size", type=int, default=32, help="Batch size for training.")
+    args = parser.parse_args()
+    
     train_dir = os.path.join("FriendsDataSet", "train")
     test_dir = os.path.join("FriendsDataSet", "test")
-    train_cnn_model(train_dir, test_dir)
+    train_cnn_model(train_dir, test_dir, epochs=args.epochs, batch_size=args.batch_size)
