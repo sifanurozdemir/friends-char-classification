@@ -146,4 +146,4 @@ python src/predict.py --image "FriendsDataSet/random-scene/ross-geller/ross_5.pn
 ---
 
 ## 👥 Katkıda Bulunanlar
-Bu proje; **Şifanur Özdemir** ve **Berat Keskin** tarafından görüntü işleme ve örüntü tanıma dersi kapsamında geliştirilmiştir.
+Bu proje; **Şifanur Özdemir** tarafından görüntü işleme ve örüntü tanıma dersi kapsamında geliştirilmiştir.
